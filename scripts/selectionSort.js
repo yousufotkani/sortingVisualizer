@@ -10,13 +10,13 @@ function selectionSort() {
 
       if (div_sizes[j] < div_sizes[min]) {
         if (min != i) {
-          divUpdate(divs[min], div_sizes[min], "blue");
+          divUpdate(divs[min], div_sizes[min], "#3F5EFB");
         }
 
         min = j;
         divUpdate(divs[min], div_sizes[min], "red");
       } else {
-        divUpdate(divs[j], div_sizes[j], "blue");
+        divUpdate(divs[j], div_sizes[j], "#3F5EFB");
       }
     }
 
