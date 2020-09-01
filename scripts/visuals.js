@@ -1,4 +1,4 @@
-var speed = 100; //default
+var speed = 10; //default
 var timeDelay;
 
 inp_speed.addEventListener("input", visualSpeed);
