@@ -1,0 +1,113 @@
+  // for(var i=start; i<=end; i++)
+    // {
+    //     if(p>mid)
+    //     {
+    //         result[k++]=div_sizes[q++];
+    //         divUpdate(divs[q-1],div_sizes[q-1],"red");//Color update
+    //     }
+    //     else if(q>end)
+    //     {
+    //         result[k++]=div_sizes[p++];
+    //         divUpdate(divs[p-1],div_sizes[p-1],"red");//Color update
+    //     }
+    //     else if(div_sizes[p]<div_sizes[q])
+    //     {
+    //         result[k++]=div_sizes[p++];
+    //         divUpdate(divs[p-1],div_sizes[p-1],"red");//Color update
+    //     }
+    //     else
+    //     {
+    //         result[k++]=div_sizes[q++];
+    //         divUpdate(divs[q-1],div_sizes[q-1],"red");//Color update
+    //     }
+    // }
+
+    
+//   for(let i=start;i<=end;i++){
+
+//       if(div_sizes[p]<div_sizes[q]){
+//           result[k] = div_sizes[p];
+//           divUpdate(divs[p],div_sizes[p],"red")
+//           p++;
+//           k++;
+//       }
+//       if(div_sizes[p]>div_sizes[q]){
+//           result[k] = div_sizes[q];
+//           divUpdate(divs[q],div_sizes[q],"red")
+//           q++;
+//           k++;
+//       }
+//       if(p<mid){
+//           result[k] = div_sizes[p];
+//           divUpdate(divs[p],div_sizes[p],"red")
+//           p++;
+//           k++;
+//       }
+//       if(q>end){
+//           result[k] = div_sizes[q]
+//           divUpdate(divs[q],div_sizes[q],"red")
+//           q++;
+//           k++;
+//       }
+
+//   }
+
+
+  while (p > mid && q > end) {
+    if (div_sizes[p] < div_sizes[q]) {
+      result[k] = div_sizes[p];
+      divUpdate(divs[p], div_sizes[p], "red");
+      p++;
+      k++;
+    } else {
+      result[k] = div_sizes[q];
+      divUpdate(divs[q], div_sizes[q], "red");
+      q++;
+      k++;
+    }
+  }
+
+  while (p > mid) {
+    result[k] = div_sizes[p];
+    divUpdate(divs[p], div_sizes[p], "red");
+    p++;
+    k++;
+  }
+
+  while(q>end){
+    result[k] = div_sizes[q]
+            divUpdate(divs[q],div_sizes[q],"red")
+            q++;
+            k++;
+  }
+
+
+
+  for(let i=start;i<=end;i++){
+
+       if(p>mid){
+          result[k++] = div_sizes[q++];
+          divUpdate(divs[q-1],div_sizes[q-1],"red")
+        //   p++;
+        //   k++;
+      }
+      else if(q>end){
+          result[k++] = div_sizes[p++]
+          divUpdate(divs[p-1],div_sizes[p-1],"red")
+        //   q++;
+        //   k++;
+      }
+      else if(div_sizes[p]<div_sizes[q]){
+          result[k++] = div_sizes[p++];
+          divUpdate(divs[p-1],div_sizes[p-1],"red")
+        //   p++;
+        //   k++;
+      }
+      else{
+          result[k++] = div_sizes[q++];
+          divUpdate(divs[q-1],div_sizes[q-1],"red")
+        //   q++;
+        //   k++;
+      }
+
+  }

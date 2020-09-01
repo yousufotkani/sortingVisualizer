@@ -1,0 +1,121 @@
+html,
+body {
+  box-sizing: border-box;
+  margin: 0rem;
+  /* background-color: #ffffff; */
+}
+
+.main-header {
+  width: 100%;
+  height: 30vh;
+  background-color:#ee9ca7;
+  text-align: center;
+}
+
+.main-header-text1 {
+  margin: 0rem;
+  font-size: 3rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.main-header-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.array-specs {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+}
+
+.array-specs p {
+  margin: 0.5rem;
+  color: whitesmoke;
+  font-size: x-large;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#generate {
+  font-size: 1.8rem;
+  margin-left: 22rem;
+  padding: 0.8rem;
+  border: 0rem;
+  border-radius: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #0275d8;
+  color: whitesmoke;
+  box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.33);
+  transition: 0.2s;
+}
+
+#generate:hover,
+#generate:active {
+  background-color: whitesmoke;
+  color: #0275d8;
+  box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.50);
+  transition: 0.2s;
+}
+
+.algos {
+  margin: 0rem;
+  display: inline-block;
+}
+
+.algos button {
+  font-size: 1.5rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border: 0rem;
+  border-radius: 16px;
+  background-color: whitesmoke;
+  color: #0275d8;
+  text-align: center;
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.33);
+  transition: 0.3s;
+}
+
+.algos button:hover,
+.algos button:active {
+  background-color: #0275d8;
+  color: whitesmoke;
+  box-shadow: 0px 0px 30px 6px rgba(0, 0, 0, 0.50);
+  transition: 0.3s;
+}
+
+section {
+  display: grid;
+  display: -ms-grid;
+  -ms-grid-columns: 20% 60% 20%;
+  grid-template-columns: 20% 60% 20%;
+}
+
+section .container1 {
+  padding: 20%;
+}
+
+section .container2 {
+  padding: 20%;
+}
+
+section #array-container {
+  display: flex;
+  /* flex-direction: row; */
+  display: -ms-flexbox;
+  display: -webkit-box;
+  width: 100%;
+  height: 70vh;
+  background-color: white;
+}
+
+.hide {
+  display: none;
+}
